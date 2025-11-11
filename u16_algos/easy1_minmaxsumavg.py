@@ -19,6 +19,60 @@ list1 = [2944, 5490, 2357, 2619, 1177, 451, 8299, 2533, 4682, 6040,
          5671, 537, 9777, 9421, 5455, 1241, 990, 3745, 8443, 4213,
          4183, 2463, 9562, 8137, 5101, 397, 6966, 9927, 7473, 4105]
 
+
+# find the biggest number and smallest number in this list of numbers
+# maxnum = list1[0]
+# minnum = list1[0]
+# # loop through every number in the list
+# for num in list1:
+#     if num > maxnum:
+#         maxnum = num
+#     elif num < minnum:
+#         minnum = num
+
+#     # if this current number in the list > stored maxnum then
+    
+#         # store current number into maxnum
+
+
+# # if this number is less than the stored minnum value then that number will be stored into minnum.
+# print(maxnum)
+# print(minnum)
+    
+
+character_power = {
+    'mario':50,
+    'luigi':45,
+    'bowser':80,
+    'peach':40,
+    'yoshi':55,
+    'toad':30,
+    'wario':70,
+    'daisy':42,
+    'waluigi':65,
+    'donkey kong':75,
+}
+
+# find the character with highest power
+# find the character with lowest power
+maxnum = 0
+maxcharacter = ""
+minnum = 100
+mincharacter = ""
+for character, num in character_power.items():
+    if num > maxnum:
+        maxnum = num
+        maxcharacter = character
+    elif num < minnum:
+        minnum = num
+        mincharacter = character
+
+print(f"The character with the highest power is {maxcharacter} with {maxnum}")
+print(f"The character with the lowest power is {mincharacter} with {minnum}")
+
+
+
+
 ####################################################
 # Answer for Question 1a here
 # maxnum = max(list1)

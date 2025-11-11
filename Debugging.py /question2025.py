@@ -45,3 +45,7 @@ while age != 0 and height != 0: # 3. Change to does not equal to
         height = float(input("Please enter your height ")) 
 print("Number of people rejected ", rejected) 
 print("Number of riders ", rider) # 11. rider and rejected are flipped
+
+
+
+
