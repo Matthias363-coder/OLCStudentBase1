@@ -113,44 +113,86 @@
 # asks the user for the new author to replace the current author
 # takes the new author of the book as input
 # validates the author name to make sure it does not contain any numeric values, repeating until the input is valid
-# changes the author in the dictionary for the title of the book input.
-# You do not need to convert the first letter of the first word of the book title to upper case.
+# # changes the author in the dictionary for the title of the book input.
+# # You do not need to convert the first letter of the first word of the book title to upper case.
 
-# Save your JupyterLab notebook for Task 3.
-# [3]
+# # Save your JupyterLab notebook for Task 3.
+# # [3]
 
-book_authors = {
-    'Winnie the pooh': 'A. A. Milne',
-    'The tale of peter rabbit': 'Beatrix Potter',
-    'The wind in the willows': 'Kenneth Grahame',
-    'The lion, the witch and the wardrobe': 'C. S. Lewis',
-    'Charlie and the chocolate factory': 'Roald Dahl'
+# book_authors = {
+#     'Winnie the pooh': 'A. A. Milne',
+#     'The tale of peter rabbit': 'Beatrix Potter',
+#     'The wind in the willows': 'Kenneth Grahame',
+#     'The lion, the witch and the wardrobe': 'C. S. Lewis',
+#     'Charlie and the chocolate factory': 'Roald Dahl'
+# }
+
+# book = input('Please enter the title of a book: ')
+# book = book[0].upper() + book[1:]
+# author = book_authors[book]
+# print(f"The author of {book} is {author}")
+
+# add = input("Would you like to add a book> Y or N: ")
+# if add.upper() == "Y":
+#     addbook = input("What is the title of the new book?")
+#     addauthor = input(f"What is the author of {addbook}? ")
+#     book_authors[addbook] = addauthor
+#     print(book_authors)
+    
+# amend = input("Would you like to change the author of a book? Y or N: ")
+# if amend.upper() == "Y":
+#     amendbook = input("What book's author would you like to change? ")
+#     while True:
+#         amendauthor = input("What is new author's name? ")
+#         isnumeric = False
+#         for c in amendbook:
+#             if c.isdigit():
+#                 isnumeric = True
+#                 break
+#         if isnumeric:
+#             print("You cannot enter numbers for author name.")
+#         else:
+#             break
+#     print(book_authors)
+
+
+
+
+
+
+
+
+
+
+
+
+scores = {
+    "Alice": {"math": 88, "english": 92, "science": 79},
+    "Ben": {"math": 75, "english": 85, "science": 90},
+    "Cara": {"math": 95, "english": 80, "science": 85}
 }
 
-book = input('Please enter the title of a book: ')
-book = book[0].upper() + book[1:]
-author = book_authors[book]
-print(f"The author of {book} is {author}")
+# Write Python code to print each student’s average score, rounded to 1 decimal place.
+for name, subjects in scores.items():
+    average = sum(subjects.values()) / len(subjects)
+    average1dp = round(average,1)
+    print(f"{name}: {average1dp}")
 
-add = input("Would you like to add a book> Y or N: ")
-if add.upper() == "Y":
-    addbook = input("What is the title of the new book?")
-    addauthor = input(f"What is the author of {addbook}? ")
-    book_authors[addbook] = addauthor
-    print(book_authors)
-    
-amend = input("Would you like to change the author of a book? Y or N: ")
-if amend.upper() == "Y":
-    amendbook = input("What book's author would you like to change? ")
-    while True:
-        amendauthor = input("What is new author's name? ")
-        isnumeric = False
-        for c in amendbook:
-            if c.isdigit():
-                isnumeric = True
-                break
-        if isnumeric:
-            print("You cannot enter numbers for author name.")
-        else:
-            break
-    print(book_authors)
+# Example output:
+
+# Alice: 86.3
+# Ben: 83.3
+# Cara: 86.7
+
+# Find and print the name of the student with the highest average score.
+# Example output:
+maxstudent = ""
+maxaverage = 0
+if average > maxaverage:
+    maxaverage = average
+    maxstudent = name
+    print(f"Top student: {maxstudent}")
+
+# Top student: Cara
+
+
