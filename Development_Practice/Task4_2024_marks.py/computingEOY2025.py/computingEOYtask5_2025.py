@@ -103,6 +103,7 @@ while True:
     else:
         pay = calculate_wage(clock_in_input, clock_out_input)
         print(f"The wage for this worker is ${pay}")
+        
 
 
 
